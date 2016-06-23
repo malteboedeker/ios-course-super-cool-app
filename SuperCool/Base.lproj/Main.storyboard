@@ -30,11 +30,21 @@
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="worthless_header_banner" translatesAutoresizingMaskIntoConstraints="NO" id="bsj-b7-iqu">
                                 <rect key="frame" x="67" y="37" width="240" height="128"/>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4F-Yi-haX">
+                                <rect key="frame" x="10" y="357" width="375" height="30"/>
+                                <state key="normal" title="Back Please"/>
+                                <connections>
+                                    <action selector="BackPlease:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9AF-yW-wm9"/>
+                                    <action selector="backToBasic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5kh-xu-73R"/>
+                                    <action selector="makeMeNotSoUncool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E6n-4U-h8o"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="backButton" destination="b4F-Yi-haX" id="yo5-UI-3Cu"/>
                         <outlet property="coolBG" destination="xxE-Bw-GRt" id="yJK-uc-IbZ"/>
                         <outlet property="coolLogo" destination="bsj-b7-iqu" id="Uq2-u0-mGl"/>
                         <outlet property="uncoolButton" destination="YQ8-ph-sTO" id="FUH-Ex-W8k"/>
